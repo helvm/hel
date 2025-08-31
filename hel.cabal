@@ -1,0 +1,75 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.38.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hel
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/githubuser/hel#readme>
+homepage:       https://github.com/githubuser/hel#readme
+bug-reports:    https://github.com/githubuser/hel/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2025 Author name here
+license:        BSD-3-Clause
+build-type:     Simple
+extra-source-files:
+    docs/README.md
+    docs/CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/hel
+
+library
+  exposed-modules:
+      Import
+      Run
+      Types
+      Util
+  other-modules:
+      Paths_hel
+  autogen-modules:
+      Paths_hel
+  hs-source-dirs:
+      hs/src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.11 && <10
+    , rio >=0.1.12.0
+  default-language: Haskell2010
+
+executable hel-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_hel
+  autogen-modules:
+      Paths_hel
+  hs-source-dirs:
+      hs/app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.11 && <10
+    , hel
+    , optparse-simple
+    , rio >=0.1.12.0
+  default-language: Haskell2010
+
+test-suite hel-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      UtilSpec
+      Paths_hel
+  autogen-modules:
+      Paths_hel
+  hs-source-dirs:
+      hs/test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.11 && <10
+    , hel
+    , hspec
+    , rio >=0.1.12.0
+  default-language: Haskell2010
