@@ -24,6 +24,11 @@ source-repository head
 
 library
   exposed-modules:
+      HelVM.Hel.Compiler.Barely
+      HelVM.Hel.Compiler.Classy
+      HelVM.Hel.Compiler.Effectively
+      HelVM.Hel.Compiler.Typically
+      HelVM.Hel.MiniHaskell.Classy
       Import
       Run
       Types
