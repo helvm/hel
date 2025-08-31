@@ -1,6 +1,6 @@
 
 {- HLINT ignore -}
-module HelVM.HelPS.Compiler.Compiler.Typically where
+module HelVM.Hel.Compiler.Typically where
 import Prelude (Char, Int, String, succ)
 import Data.Char (chr, ord)
 import qualified Prelude

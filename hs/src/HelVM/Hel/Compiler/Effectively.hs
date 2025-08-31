@@ -1,6 +1,6 @@
 
 {- HLINT ignore -}
-module HelVM.HelPS.Compiler.Compiler.Effectively where
+module HelVM.Hel.Compiler.Effectively where
 import Prelude (Bool(..), Char, Int, String, succ)
 import Data.Char (chr, ord)
 import qualified Prelude
