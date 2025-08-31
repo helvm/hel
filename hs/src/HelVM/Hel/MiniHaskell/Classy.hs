@@ -10,7 +10,7 @@
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE TupleSections #-}
 {-# LANGUAGE NoMonomorphismRestriction #-}
-module HelVM.HelPS.MiniHaskell.Classy where
+module HelVM.Hel.MiniHaskell.Classy where
 import Prelude (Char, Int, String, succ)
 import Data.Char (chr, ord)
 import qualified Prelude
